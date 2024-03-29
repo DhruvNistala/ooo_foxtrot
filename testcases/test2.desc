@@ -1,0 +1,14 @@
+This test is another simple R/W case which calculates Fibonacci
+numbers. It also tests your conditional select.
+
+MOVZ 30 -> R3
+MOVZ 1 -> R4
+MOVZ 1 -> R5
+CSEL (always) R5->R4
+ADDS (R4, R5) -> R5
+SUB (R3, 1) -> R3
+B (off = -3) cond = NE
+HLT
+
+This will calculate the 31st Fibonacci number in R5. Change the value that R3
+is initialized to in order to calculated the (n+1)th Fib number. 

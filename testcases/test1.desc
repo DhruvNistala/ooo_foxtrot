@@ -7,5 +7,6 @@ MOVZ 10 -> R4
 ADD (R4, 10) -> R4
 SUB (R3, 1) -> R3
 B (off = -2) cond = NE
+HLT
 
 The expected output of this program is for R4 to have the value 10 + 34*10 = 350
