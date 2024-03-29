@@ -1,0 +1,11 @@
+This test is a simple load-store test that tests your CPU's scheduling by repeatedly
+reading from and writing to the same register, while issuing multiple ALU ops.
+Here is the hex translated into instructions:
+
+MOVZ 34 -> R3
+MOVZ 10 -> R4
+ADD (R4, 10) -> R4
+SUB (R3, 1) -> R3
+B (off = -2) cond = NE
+
+The expected output of this program is for R4 to have the value 10 + 34*10 = 350
