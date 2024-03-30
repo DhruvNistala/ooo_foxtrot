@@ -10,5 +10,5 @@ SUB (R3, 1) -> R3
 B (off = -3) cond = NE
 HLT
 
-This will calculate the 31st Fibonacci number in R5. Change the value that R3
+This will calculate the 31st Fibonacci number in R5. Change the value (n) that R3
 is initialized to in order to calculated the (n+1)th Fib number. 
